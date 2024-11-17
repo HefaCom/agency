@@ -16,3 +16,17 @@ export default function PricingPage() {
   );
 } 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

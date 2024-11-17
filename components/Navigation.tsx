@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, ArrowRight } from "lucide-react";
 
 export function Navigation() {
   return (
@@ -28,13 +28,20 @@ export function Navigation() {
               <Link href="/pricing" className="nav-button-ghost nav-button">
                 Pricing
               </Link>
-              <Link href="#" className="nav-button-ghost nav-button">
-                Blog
+              <Link href="/contact" className="nav-button-ghost nav-button">
+                Contact
               </Link>
             </div>
 
             {/* Right Section */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-4">
+              <Link
+                href="/contact"
+                className="hidden lg:inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-6 py-2 font-medium hover:shadow-lg transition-all duration-200 hover:scale-105"
+              >
+                <span>Get Started</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
               <Link href="#" className="nav-button-ghost nav-button">
                 <div className="flex items-center space-x-1">
                   <ShoppingCart className="w-4 h-4 opacity-70" />
