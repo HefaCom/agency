@@ -25,7 +25,7 @@ export function Navigation() {
               <Link href="/services" className="nav-button-ghost nav-button">
                 Services
               </Link>
-              <Link href="#" className="nav-button-ghost nav-button">
+              <Link href="/pricing" className="nav-button-ghost nav-button">
                 Pricing
               </Link>
               <Link href="#" className="nav-button-ghost nav-button">
