@@ -33,28 +33,14 @@ export function Navigation() {
               </Link>
             </div>
 
-            {/* Right Section */}
-            <div className="flex items-center space-x-4">
+            {/* Right Section - Only Get Started Button */}
+            <div className="flex items-center">
               <Link
                 href="/contact"
                 className="hidden lg:inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-6 py-2 font-medium hover:shadow-lg transition-all duration-200 hover:scale-105"
               >
                 <span>Get Started</span>
                 <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link href="#" className="nav-button-ghost nav-button">
-                <div className="flex items-center space-x-1">
-                  <ShoppingCart className="w-4 h-4 opacity-70" />
-                  <span className="text-xs bg-purple-600 rounded-full w-4 h-4 flex items-center justify-center">
-                    0
-                  </span>
-                </div>
-              </Link>
-              <Link 
-                href="#" 
-                className="px-4 py-1.5 bg-white text-[#0A051E] rounded-full text-sm font-medium transition-all duration-200 hover:bg-white/90"
-              >
-                Contact us
               </Link>
             </div>
           </div>
