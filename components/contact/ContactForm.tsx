@@ -33,7 +33,7 @@ export function ContactForm() {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://formspree.io/f/your_form_id', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
