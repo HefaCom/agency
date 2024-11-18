@@ -2,6 +2,35 @@
 
 import { useEffect, useRef } from "react";
 
+// Declare YouTube IFrame API types
+declare global {
+  interface Window {
+    onYouTubeIframeAPIReady: () => void;
+    YT: {
+      Player: new (
+        elementId: string,
+        config: {
+          videoId: string;
+          playerVars?: {
+            autoplay?: number;
+            loop?: number;
+            controls?: number;
+            showinfo?: number;
+            rel?: number;
+            enablejsapi?: number;
+            modestbranding?: number;
+            mute?: number;
+            playlist?: string;
+          };
+          events?: {
+            onReady?: (event: { target: any }) => void;
+          };
+        }
+      ) => void;
+    };
+  }
+}
+
 interface YouTubeVideoProps {
   videoId: string;
 }
