@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const YouTubeVideo = dynamic(() => import("./YouTubeVideo").then(mod => mod.YouTubeVideo), {
   ssr: false,
@@ -42,12 +44,16 @@ export function Hero() {
               Transform your operations with AI-driven solutions that optimize workflows, enhance decision-making, and unlock growth. From bespoke automation to cutting-edge language models, we deliver tools designed to scale your business for the future.
             </p>
             
-            {/* Button with Gradient Effect */}
-            <div className="relative inline-block">
-              <div className="absolute -inset-[3px] bg-gradient-to-r from-pink-600 to-purple-600 rounded-full opacity-75 blur-[2px]" />
-              <button className="relative px-8 py-4 bg-white text-gray-900 rounded-full text-lg font-semibold hover:shadow-lg transition-all duration-200">
-                Get Free Consultation
-              </button>
+            <div className="flex flex-wrap justify-center gap-6 mt-8">
+              <Link
+                href="https://calendly.com/themetaversecompany/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-8 py-4 font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
+              >
+                <span>Get Free Consultation</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
           </div>
         </div>

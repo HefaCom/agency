@@ -8,6 +8,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { useState } from "react";
+import Link from "next/link";
 
 const highlights = [
   {
@@ -98,10 +99,13 @@ export function Solutions() {
               <p className="text-gray-400 text-lg mb-8">
                 Our AI solutions are tailored to align with your unique business needs, helping you automate, innovate, and scale effortlessly.
               </p>
-              <button className="group flex items-center space-x-2 text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full px-6 py-3 hover:shadow-lg transition-all duration-200 hover:scale-105">
+              <Link
+                href="/services"
+                className="group inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-6 py-3 hover:shadow-lg transition-all duration-200 hover:scale-105"
+              >
                 <span>See Our AI Solutions</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </Link>
             </div>
           </motion.div>
 
@@ -174,9 +178,12 @@ export function Solutions() {
             <h3 className="text-3xl font-bold text-white mb-8">
               From concept to execution, we bring your AI vision to life.
             </h3>
-            <button className="bg-white text-gray-900 rounded-full px-8 py-4 font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105">
+            <Link
+              href="/contact"
+              className="bg-white text-gray-900 rounded-full px-8 py-4 font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
+            >
               Let's Build Something Intelligent Together
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>

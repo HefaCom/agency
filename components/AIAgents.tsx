@@ -11,6 +11,7 @@ import {
   ArrowRight,
   Play
 } from "lucide-react";
+import Link from "next/link";
 
 const agents = [
   {
@@ -210,9 +211,12 @@ export function AIAgents() {
             Discover the AI Agent That Can Transform Your Business
           </h3>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105">
+            <Link
+              href="/contact"
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
+            >
               Schedule a Free Consultation
-            </button>
+            </Link>
             <button className="px-8 py-4 bg-white/10 text-white rounded-full font-semibold hover:bg-white/20 transition-all duration-200">
               See How It Works
             </button>

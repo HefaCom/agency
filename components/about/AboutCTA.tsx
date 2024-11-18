@@ -32,7 +32,9 @@ export function AboutCTA() {
           </p>
           
           <Link 
-            href="#"
+            href="https://calendly.com/themetaversecompany/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-8 py-4 font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
           >
             <span>Schedule a Free Consultation</span>

@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Brain, Lightbulb, Cog, LineChart } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const steps = [
   {
@@ -112,9 +114,17 @@ export function Process() {
           <h3 className="text-2xl font-semibold text-white mb-6">
             Ready to revolutionize your business? Let's build something amazing together.
           </h3>
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105">
-            Schedule Your Free Consultation
-          </button>
+          <div className="text-center mt-12">
+            <Link
+              href="https://calendly.com/themetaversecompany/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-8 py-4 font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
+            >
+              <span>Schedule Your Free Consultation</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
         </motion.div>
 
         {/* Floating Elements */}
