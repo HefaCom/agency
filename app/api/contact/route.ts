@@ -1,49 +1,36 @@
 import { NextResponse } from 'next/server';
+import * as SibApiV3Sdk from '@sendinblue/client';
 
-export const runtime = 'edge';
+const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
+apiInstance.setApiKey(SibApiV3Sdk.TransactionalEmailsApiApiKeys.apiKey, process.env.BREVO_API_KEY!);
 
 export async function POST(req: Request) {
   try {
     const data = await req.json();
-    
-    const response = await fetch('https://api.brevo.com/v3/smtp/email', {
-      method: 'POST',
-      headers: {
-        'accept': 'application/json',
-        'api-key': process.env.BREVO_API_KEY!,
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify({
-        sender: {
-          name: 'AI Automation Agency',
-          email: 'noreply@aiautomationagency.com'
-        },
-        to: [{
-          email: process.env.ADMIN_EMAIL,
-          name: 'Admin'
-        }],
-        subject: 'New Contact Form Submission',
-        htmlContent: `
-          <h1>New Contact Request</h1>
-          <p><strong>Name:</strong> ${data.name}</p>
-          <p><strong>Email:</strong> ${data.email}</p>
-          <p><strong>Phone:</strong> ${data.phone}</p>
-          <p><strong>Service:</strong> ${data.service}</p>
-          <p><strong>Meeting Date:</strong> ${data.date}</p>
-          <p><strong>Message:</strong> ${data.message}</p>
-        `
-      })
-    });
+    const { name, email, phone, service, date, message } = data;
 
-    if (!response.ok) {
-      throw new Error('Failed to send email');
-    }
+    const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail();
+    sendSmtpEmail.subject = `New Contact Form Submission from ${name}`;
+    sendSmtpEmail.htmlContent = `
+      <h2>New Contact Form Submission</h2>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+      <p><strong>Service:</strong> ${service}</p>
+      <p><strong>Preferred Date:</strong> ${date}</p>
+      <p><strong>Message:</strong></p>
+      <p>${message}</p>
+    `;
+    sendSmtpEmail.sender = { name: name, email: email };
+    sendSmtpEmail.to = [{ email: process.env.ADMIN_EMAIL! }];
+    sendSmtpEmail.replyTo = { email: email };
+
+    const result = await apiInstance.sendTransacEmail(sendSmtpEmail);
     
     return NextResponse.json(
       { message: 'Email sent successfully' },
       { status: 200 }
     );
-
   } catch (error) {
     console.error('Error sending email:', error);
     return NextResponse.json(
