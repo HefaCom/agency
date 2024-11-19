@@ -49,13 +49,13 @@ export function Footer() {
 
             {/* Phone */}
             <Link
-              href="tel:02080582458"
+              href="tel:02080586160"
               className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-200 group"
             >
               <div className="p-2 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors duration-200">
                 <Phone className="w-5 h-5" />
               </div>
-              <span>020 8058 2458</span>
+              <span>020 8058 6160</span>
             </Link>
           </div>
 
