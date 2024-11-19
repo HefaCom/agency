@@ -6,11 +6,27 @@
 
 
 
+
+
+
+
+
+
+
+
 import { motion } from "framer-motion";
 
 
 
+
+
+
+
 import Link from "next/link";
+
+
+
+
 
 
 
@@ -22,7 +38,19 @@ import { ArrowRight } from "lucide-react";
 
 
 
+
+
+
+
+
+
+
+
 export function ServicesCTA() {
+
+
+
+
 
 
 
@@ -30,7 +58,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
     <section className="py-24 relative overflow-hidden">
+
+
+
+
 
 
 
@@ -38,7 +74,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
       <div className="absolute inset-0 grid-overlay opacity-10" />
+
+
+
+
 
 
 
@@ -46,7 +90,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+
+
+
 
 
 
@@ -54,7 +106,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
           initial={{ opacity: 0, y: 20 }}
+
+
+
+
 
 
 
@@ -62,7 +122,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
           viewport={{ once: true }}
+
+
+
+
 
 
 
@@ -70,7 +138,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
           className="text-center"
+
+
+
+
 
 
 
@@ -78,7 +154,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+
+
+
+
 
 
 
@@ -86,7 +170,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
           </h2>
+
+
+
+
 
 
 
@@ -94,11 +186,23 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
             Let us help you build smarter, faster, and more efficient business processes. 
 
 
 
+
+
+
+
             Partner with us to automate success.
+
+
+
+
 
 
 
@@ -110,11 +214,27 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
+
+
+
+
           <div className="flex flex-wrap justify-center gap-6">
 
 
 
+
+
+
+
             <Link
+
+
+
+
 
 
 
@@ -122,7 +242,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
               target="_blank"
+
+
+
+
 
 
 
@@ -130,11 +258,23 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
               className="group inline-flex items-center space-x-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full px-8 py-4 font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
 
 
 
+
+
+
+
             >
+
+
+
+
 
 
 
@@ -142,11 +282,23 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
 
 
 
+
+
+
+
             </Link>
+
+
+
+
 
 
 
@@ -154,7 +306,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
               href="#demo"
+
+
+
+
 
 
 
@@ -162,7 +322,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
             >
+
+
+
+
 
 
 
@@ -170,7 +338,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
             </Link>
+
+
+
+
 
 
 
@@ -178,7 +354,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
         </motion.div>
+
+
+
+
 
 
 
@@ -186,7 +370,15 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
     </section>
+
+
+
+
 
 
 
@@ -194,7 +386,139 @@ export function ServicesCTA() {
 
 
 
+
+
+
+
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
