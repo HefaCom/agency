@@ -14,6 +14,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { motion } from "framer-motion";
 
 
@@ -22,7 +38,23 @@ import { motion } from "framer-motion";
 
 
 
+
+
+
+
+
+
+
+
 import { Bot, Brain, LineChart } from "lucide-react";
+
+
+
+
+
+
+
+
 
 
 
@@ -46,6 +78,22 @@ import Link from "next/link";
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const services = [
 
 
@@ -54,7 +102,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
   {
+
+
+
+
+
+
+
+
 
 
 
@@ -70,7 +134,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     description: "Build intelligent AI agents tailored to your business needs. From customer service bots to advanced decision-making agents, we create solutions that enhance productivity and efficiency.",
+
+
+
+
+
+
+
+
 
 
 
@@ -86,7 +166,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     deliverables: [
+
+
+
+
+
+
+
+
 
 
 
@@ -102,7 +198,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
       "Integration with platforms like Slack, CRM systems, or proprietary apps",
+
+
+
+
+
+
+
+
 
 
 
@@ -118,6 +230,14 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     ],
 
 
@@ -126,7 +246,6 @@ const services = [
 
 
 
-    timeline: "4-6 weeks",
 
 
 
@@ -134,7 +253,16 @@ const services = [
 
 
 
-    price: "Starting at $10,000"
+
+    timeline: "4-6 weeks"
+
+
+
+
+
+
+
+
 
 
 
@@ -150,7 +278,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
   {
+
+
+
+
+
+
+
+
 
 
 
@@ -166,7 +310,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     description: "Customize pre-trained AI models like GPT to understand and cater to your unique business context.",
+
+
+
+
+
+
+
+
 
 
 
@@ -182,7 +342,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     deliverables: [
+
+
+
+
+
+
+
+
 
 
 
@@ -198,7 +374,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
       "Domain-specific capabilities for customer queries and analytics",
+
+
+
+
+
+
+
+
 
 
 
@@ -214,6 +406,14 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     ],
 
 
@@ -222,7 +422,6 @@ const services = [
 
 
 
-    timeline: "6-8 weeks",
 
 
 
@@ -230,7 +429,16 @@ const services = [
 
 
 
-    price: "Starting at $15,000"
+
+    timeline: "6-8 weeks"
+
+
+
+
+
+
+
+
 
 
 
@@ -246,7 +454,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
   {
+
+
+
+
+
+
+
+
 
 
 
@@ -262,7 +486,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     description: "Harness AI to predict trends, manage risks, and gain insights from your data for proactive decision-making.",
+
+
+
+
+
+
+
+
 
 
 
@@ -278,7 +518,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     deliverables: [
+
+
+
+
+
+
+
+
 
 
 
@@ -294,7 +550,23 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
       "Real-time dashboard for analytics and insights",
+
+
+
+
+
+
+
+
 
 
 
@@ -310,6 +582,14 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
     ],
 
 
@@ -318,7 +598,6 @@ const services = [
 
 
 
-    timeline: "5-7 weeks",
 
 
 
@@ -326,7 +605,16 @@ const services = [
 
 
 
-    price: "Starting at $12,000"
+
+    timeline: "5-7 weeks"
+
+
+
+
+
+
+
+
 
 
 
@@ -335,6 +623,14 @@ const services = [
 
 
   }
+
+
+
+
+
+
+
+
 
 
 
@@ -358,7 +654,31 @@ const services = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export function AIDevelopment() {
+
+
+
+
+
+
+
+
 
 
 
@@ -374,7 +694,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
     <section id="ai-development" className="py-24 relative overflow-hidden">
+
+
+
+
+
+
+
+
 
 
 
@@ -390,7 +726,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
       <div className="absolute inset-0 bg-gradient-radial opacity-20" />
+
+
+
+
+
+
+
+
 
 
 
@@ -406,7 +758,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
       
+
+
+
+
+
+
+
+
 
 
 
@@ -422,7 +790,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
         <motion.div
+
+
+
+
+
+
+
+
 
 
 
@@ -438,7 +822,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
           whileInView={{ opacity: 1, y: 0 }}
+
+
+
+
+
+
+
+
 
 
 
@@ -454,7 +854,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
           transition={{ duration: 0.6 }}
+
+
+
+
+
+
+
+
 
 
 
@@ -470,7 +886,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
         >
+
+
+
+
+
+
+
+
 
 
 
@@ -486,7 +918,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
             Transform Ideas into Reality with<br />Custom AI Development
+
+
+
+
+
+
+
+
 
 
 
@@ -502,7 +950,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+
+
+
+
+
+
+
+
 
 
 
@@ -518,7 +982,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
           </p>
+
+
+
+
+
+
+
+
 
 
 
@@ -542,7 +1022,31 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div className="grid md:grid-cols-3 gap-8">
+
+
+
+
+
+
+
+
 
 
 
@@ -558,7 +1062,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
             <motion.div
+
+
+
+
+
+
+
+
 
 
 
@@ -574,7 +1094,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
               initial={{ opacity: 0, y: 20 }}
+
+
+
+
+
+
+
+
 
 
 
@@ -590,7 +1126,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
               viewport={{ once: true }}
+
+
+
+
+
+
+
+
 
 
 
@@ -606,7 +1158,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
               className="relative group"
+
+
+
+
+
+
+
+
 
 
 
@@ -622,7 +1190,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl opacity-20 group-hover:opacity-30 blur transition-all duration-200" />
+
+
+
+
+
+
+
+
 
 
 
@@ -638,7 +1222,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                 <service.icon className="w-12 h-12 text-purple-500 mb-6" />
+
+
+
+
+
+
+
+
 
 
 
@@ -654,6 +1254,14 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                 <p className="text-gray-400 mb-6">{service.description}</p>
 
 
@@ -662,7 +1270,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                 
+
+
+
+
+
+
+
+
 
 
 
@@ -678,7 +1302,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                   <h4 className="text-lg font-semibold text-white">Deliverables:</h4>
+
+
+
+
+
+
+
+
 
 
 
@@ -694,7 +1334,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                     {service.deliverables.map((item, i) => (
+
+
+
+
+
+
+
+
 
 
 
@@ -710,7 +1366,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                         <span className="text-purple-500 mr-2">•</span>
+
+
+
+
+
+
+
+
 
 
 
@@ -726,7 +1398,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                       </li>
+
+
+
+
+
+
+
+
 
 
 
@@ -742,6 +1430,14 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                   </ul>
 
 
@@ -750,7 +1446,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                 </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -766,6 +1478,14 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                 <div className="space-y-2">
 
 
@@ -774,7 +1494,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
                   <p className="text-gray-400">
+
+
+
+
+
+
+
+
 
 
 
@@ -790,23 +1526,7 @@ export function AIDevelopment() {
 
 
 
-                  </p>
 
-
-
-
-
-
-
-                  <p className="text-gray-400">
-
-
-
-
-
-
-
-                    <span className="text-white font-semibold">Price:</span> {service.price}
 
 
 
@@ -815,6 +1535,14 @@ export function AIDevelopment() {
 
 
                   </p>
+
+
+
+
+
+
+
+
 
 
 
@@ -830,7 +1558,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
               </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -846,7 +1590,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
           ))}
+
+
+
+
+
+
+
+
 
 
 
@@ -862,7 +1622,23 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
       </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -878,6 +1654,14 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
   );
 
 
@@ -886,7 +1670,289 @@ export function AIDevelopment() {
 
 
 
+
+
+
+
+
+
+
+
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
